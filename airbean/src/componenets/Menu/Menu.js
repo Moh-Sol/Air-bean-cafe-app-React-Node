@@ -4,7 +4,7 @@ import Nav from '../Nav/Nav'
 
 
 
-function Menu() {  
+function Menu() {
     const [menuData, setMenuData] = useState('');
 
     useEffect(async () => {
@@ -18,9 +18,11 @@ function Menu() {
     console.log(menuData)
 
 
+
+
     return (
         <div>
-            {/* <ul>
+             <ul>
                 {​​​​menuData.map((item) => {​​​​
                     return (
                         <li key={item.id}>
@@ -29,9 +31,9 @@ function Menu() {
                             <h6>{​​​​item.desc}​​​​</h6>
                         </li>
                     )}​​​​)}​​​​
-            </ul> */}
+            </ul> 
         </div>
-    )
-​​​​};
+    );
+}
 
 export default Menu;
