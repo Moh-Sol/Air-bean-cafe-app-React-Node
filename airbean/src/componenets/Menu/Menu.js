@@ -6,10 +6,17 @@ import add from '../../assets/graphics/add.svg'
 import bag from '../../assets/graphics/bag.svg'
 import navIcon from '../../assets/graphics/navicon.svg'
 import addBeverage from '../../actions/addBeverage'
+import { useDispatch } from 'react-redux'
 
 
 function Menu() {
+
+
+    const dispatch = useDispatch()
+
     const [menuData, setMenuData] = useState([]);
+    const [beverage, setBeverage] = useState([]);
+
 
     useEffect(async () => {
         const response = await fetch(`http://localhost:5000/api/beans`);
@@ -19,7 +26,21 @@ function Menu() {
     }, [])
 
 
-    console.log(menuData)
+
+
+    useEffect(() => {
+        console.log(beverage)
+
+        // dispatch(addBeverage(beverage))
+    }, [beverage])
+
+
+
+
+
+    // setBeverage(item); handleAdd()
+
+
 
     return (
         <div className={Styles.menuContainer}>
@@ -38,7 +59,9 @@ function Menu() {
                     return (
                         <li className={Styles.listItem} key={item.id}>
                             <div>
-                                <img className={Styles.imgPlus} onClick={()=>addBeverage(item)} src={add}></img>
+                                <img className={Styles.imgPlus} onClick={() => {
+                                    setBeverage(item)
+                                }} src={add}></img>
                             </div>
                             <div>
                                 <span>{item.title}</span>
