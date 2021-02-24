@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Nav from '../Nav/Nav'
 
+
+
 function Menu() {
     const [menuData, setMenuData] = useState('');
 
@@ -14,11 +16,11 @@ function Menu() {
 
     console.log(menuData)
     return (
-        <div>
-            <h1>Meny</h1>
-             {menuData.map((item) => {
+        <section>
+        <h1>Meny</h1> 
+           {menuData.map((item) => {
                return (
-                    <div key={item.id}>
+                    <div key={item.id}> 
                         <h2> {item.title}  {item.price}Kr</h2>
                         <p>{item.desc}</p>
                     </div>  
@@ -27,7 +29,7 @@ function Menu() {
             
             })} 
 
-        </div>
+        </section>
     );
 }
 
