@@ -18,6 +18,10 @@ function Menu() {
     return (
         <section>
         <h1>Meny</h1> 
+        {menuData.map((item) => {
+               return (<h1> {item.title}</h1>)
+            })}
+
           {/*  {menuData.map((item) => {
                return (
                     <div key={item.id}> 
