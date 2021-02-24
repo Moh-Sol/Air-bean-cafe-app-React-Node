@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import './App.css';
 import { Route, Switch, useHistory } from 'react-router-dom';
@@ -11,7 +12,6 @@ import Landing from './componenets/Landing/Landing'
 
 
 
-
 function App() {
   const history = useHistory();
 
@@ -21,8 +21,9 @@ function App() {
 
   return (
     <div className="App">
+
       <Switch>
-        
+     
         <Route path="/landing" component={Landing} />
         <Route path="/menu" component={Menu} />
         <Route path="/about" component={About} />
@@ -30,6 +31,9 @@ function App() {
         <Route path="/status/" component={Status} />
         <Route component={Error} />
       </Switch>
+
+
+    
 
 
     </div>
