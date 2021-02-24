@@ -16,8 +16,6 @@ function Menu() {
     }, [])
 
 
-  
-
     console.log(menuData)
 
     return (
