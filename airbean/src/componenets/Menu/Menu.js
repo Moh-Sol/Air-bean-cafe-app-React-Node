@@ -4,7 +4,7 @@ function Menu() {
     return (
         <div>
             <Nav />
-            <h1>Meny </h1>
+            <h1>Meny</h1>
 
         </div>
     );
