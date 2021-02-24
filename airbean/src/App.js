@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { Route, Switch, useHistory } from 'react-router-dom';
-import Menu from './componenets/Mneu/Menu'
+import Menu from './componenets/Menu/Menu'
 import About from './componenets/About/About'
 import Cart from './componenets/Card/Card'
 import Status from './componenets/Status/Status'
