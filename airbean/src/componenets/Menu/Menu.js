@@ -15,16 +15,17 @@ function Menu() {
     console.log(menuData)
     return (
         <div>
-            {menuData.map((item) => {
+            <h1>Meny</h1>
+             {menuData.map((item) => {
                return (
-                    <div>
-                        <h1> {item.title}</h1>
-                        <p></p>
+                    <div key={item.id}>
+                        <h2> {item.title}  {item.price}Kr</h2>
+                        <p>{item.desc}</p>
                     </div>  
                 
                 )
             
-            })}
+            })} 
 
         </div>
     );
