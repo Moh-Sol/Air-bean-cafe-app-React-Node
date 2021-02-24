@@ -1,9 +1,7 @@
 import React from 'react';
-import Nav from '../Nav/Nav'
-function Card(props) {
+function Card() {
     return (
         <div>
-            <Nav/>
             <h1>Din beställning</h1>
         </div>
     );
