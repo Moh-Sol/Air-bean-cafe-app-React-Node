@@ -1,8 +1,5 @@
 
-<<<<<<< HEAD
-=======
 import React, { useEffect } from 'react';
->>>>>>> master
 import './App.css';
 import { Route, Switch, useHistory } from 'react-router-dom';
 import Menu from './componenets/Menu/Menu'
@@ -24,9 +21,6 @@ function App() {
 
   return (
     <div className="App">
-<<<<<<< HEAD
-     <h1>TEST</h1>
-=======
 
       <Switch>
      
@@ -41,7 +35,6 @@ function App() {
 
     
 
->>>>>>> master
 
     </div>
   );
