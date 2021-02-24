@@ -5,27 +5,26 @@ import Nav from '../Nav/Nav'
 
 
 function Menu() {
-    const [data, setData] = useState('');
+    const [menuData, setMenuData] = useState('');
 
     useEffect(async () => {
         const response = await fetch(`http://localhost:5000/api/beans`);
         const data = await response.json();
         // console.log(data)
-        setData(data)
+        setMenuData(data.menu)
 
     }, [])
 
-    console.log(data)
+    console.log(menuData)
 
 
-    // let items = data.map((item) => {
-    //     return <h1> {item.title}</h1>
-    // })
 
 
     return (
         <div>
-            {/* {items} */}
+            {menuData.map((item) => {
+               return (<h1> {item.title}</h1>)
+            })}
 
         </div>
     );
