@@ -1,25 +1,3 @@
-// import React from 'react';
-// import { Link, NavLink } from 'react-router-dom'
-
-
-
-// const Nav = (props) => {
-
-//     console.log(props)
-
-//     return (
-//         <nav className='nav'>
-
-//             <NavLink to='/menu'>Meny </NavLink>
-//             <NavLink to='/about'>Vårt kaffe </NavLink>
-//         </nav>
-//     )
-// }
-// export default Nav;
-
-
-
-
 
 
 
@@ -48,12 +26,12 @@ export default function Nav(props) {
 
             <nav
                 className={navStyles.nav}>
-                <NavLink
+                <NavLink onClick={() => props.toggleNav(false)}
                     className={navStyles.menyandcoffe}
                     to='/menu'
                 >Meny </NavLink>
                 <p className={navStyles.rectangle}></p>
-                <NavLink
+                <NavLink onClick={() => props.toggleNav(false)}
                     className={navStyles.menyandcoffe}
                     to='/about'
                 >Vårt kaffe </NavLink>
