@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+/* font-family: 'PT Serif', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+.main {
+    background: #F3E4E1;
+    width: 100%;
+    padding: 2rem;
+}
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: left;
+}
+.h1 {
+    font-family: 'PT Serif', serif;
+    line-height: 50.4px;
+    margin-bottom: 2rem;
+}
+.strong {
+    font-size: 0.875rem;
+    line-height: 22.4px;
+}
+.p {
+    font-family: 'Work Sans', sans-serif;
+    color: #2F2926;
+    font-size: 0.75rem;
+    line-height: 19.2px;
+    margin-bottom: 2rem;
+}
+.section {
+    margin-top: .75rem;
+    text-align: center;
+}
+.img {
+    border-radius: 50%;
+}
+.h2 {
+    font-family: 'PT Serif', serif;
+}
