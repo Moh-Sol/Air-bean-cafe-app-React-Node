@@ -1,12 +1,10 @@
 import React from 'react';
-
-
-function test(props) {
+function Card() {
     return (
         <div>
-            <h1> Test </h1>
+            <h1>Din beställning</h1>
         </div>
     );
 }
 
-export default test;
+export default Card;
