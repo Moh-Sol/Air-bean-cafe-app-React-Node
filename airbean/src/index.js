@@ -4,13 +4,45 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
+// State med en array som sparar kaffe-objekten.
+const initialState = {
+  beverages: []
+}
+
+function reducer(state = initialState, action) {
+  switch(action.type){
+    case "ADD_BEVERAGE": // Lägger till drinken i arrayn.
+      return {
+            ...state, 
+            beverages: state.beverages.push(action.payload)
+          }
+    case "REMOVE_BEVERAGE": // Tar bort drink 
+      let index = state.beverages.indexOf(action.payload);
+      let newBeverages = state.beverages;
+      if (index > -1) {
+        newBeverages = state.beverages.splice(index, 1);
+      }
+      return {
+        ...state,
+        beverages: newBeverages
+      }
+    default: 
+      return state;
+  }
+}
+
+const store = createStore(reducer);
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
