@@ -13,12 +13,12 @@ const initialState = {
 }
 
 function reducer(state = initialState, action) {
-  switch(action.type){
+  switch (action.type) {
     case "ADD_BEVERAGE": // Lägger till drinken i arrayn.
       return {
-            ...state, 
-            beverages: state.beverages.push(action.payload)
-          }
+        ...state,
+        beverages: [...state.beverages, action.payload]
+      }
     case "REMOVE_BEVERAGE": // Tar bort drink 
       let index = state.beverages.indexOf(action.payload);
       let newBeverages = state.beverages;
@@ -29,12 +29,12 @@ function reducer(state = initialState, action) {
         ...state,
         beverages: newBeverages
       }
-    default: 
+    default:
       return state;
   }
 }
 
-const store = createStore(reducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
   <React.StrictMode>
