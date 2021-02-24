@@ -6,11 +6,38 @@
     background: #F3E4E1;
     width: 100%;
     padding: 2rem;
+    position: relative;
+    z-index: -1;
 }
+    .main::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('../../assets/graphics/graphics-header.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        z-index: inherit;
+    }
+    .main::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('../../assets/graphics/graphics-footer.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        z-index: inherit;
+    }
 .container {
     margin: 0 auto;
     max-width: 900px;
     text-align: left;
+    z-index: 1000;
 }
 .h1 {
     font-family: 'PT Serif', serif;
@@ -31,6 +58,7 @@
 .section {
     margin-top: .75rem;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 .img {
     border-radius: 50%;

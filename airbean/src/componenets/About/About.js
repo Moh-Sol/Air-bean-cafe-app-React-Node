@@ -2,10 +2,12 @@ import React from 'react';
 import Nav from '../Nav/Nav';
 import style from './About.module.css';
 import image from '../../assets/graphics/eva-cortado.jpg';
+import HamburgerMenu from '../Hamburger-menu/HamburgerMenu'
 
 function About(props) {
     return (
         <main className={style.main}>
+            <HamburgerMenu />
             <div className={style.container}>
             {/* <Nav/> */}
                 <h1 className={style.h1}>Vårt kaffe </h1>
