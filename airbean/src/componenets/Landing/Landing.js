@@ -1,11 +1,15 @@
 import React from 'react';
+import logo from '../assets/graphics/airbean-landing.svg'
 
 function Landing() {
     return (
         <div>
-            <h1>Landing</h1>
+            <img src={logo}></img>
         </div>
     );
 }
 
 export default Landing;
+
+
+
