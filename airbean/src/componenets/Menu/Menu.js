@@ -18,7 +18,7 @@ function Menu() {
     return (
         <section>
         <h1>Meny</h1> 
-           {menuData.map((item) => {
+          {/*  {menuData.map((item) => {
                return (
                     <div key={item.id}> 
                         <h2> {item.title}  {item.price}Kr</h2>
@@ -27,7 +27,7 @@ function Menu() {
                 
                 )
             
-            })} 
+            })}  */}
 
         </section>
     );
