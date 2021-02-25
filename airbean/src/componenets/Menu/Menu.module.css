@@ -4,12 +4,12 @@
 /* font-family: 'Work Sans', sans-serif; */
 
 .menuContainer {
-  width: 375px;
-  height: 839px;
+  width: 100%;
+  min-height: 839px;
   background: #f3e4e1;
   position: relative;
-  z-index: -1;
   margin: 0 auto;
+  padding-top: 4rem;
 }
 
 .menuContainer::before {
@@ -37,46 +37,30 @@
   z-index: inherit;
 }
 
-.headerContainer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-
-.navIcon {
-  height: 15px;
-  background-color: #fff;
-}
-
-.imgBag {
-  background-color: black;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 50%;
-}
-
 .menuh1 {
   padding: 50px;
   font-family: "PT Serif", serif;
+  font-size: 2.625rem;
+  color: #2f2926;
 }
 
 .dataLista {
+  position: relative;
   display: flex;
   flex-direction: column;
   list-style: none;
   height: 60%;
   justify-content: space-between;
+  z-index: 2000;
 }
 
 .listItem {
   display: flex;
-
-  /* background-color: blueviolet; */
 }
 
 .listItem div:first-of-type {
   display: flex;
-  /* background-color: rgb(177, 134, 218); */
+
   justify-content: center;
   align-items: center;
 }
@@ -92,8 +76,64 @@
   background-color: black;
   border-radius: 50%;
   padding: 2.5px;
+  cursor: pointer;
 }
 
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.imgDiv {
+  background-color: #2f2926;
+  height: 3.75rem;
+  width: 3.75rem;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.imgBag {
+  text-align: center;
+}
+
+.navIcon {
+  height: 15px;
+  background-color: #fff;
+}
+
+.totalDrinks {
+  position: absolute;
+  top: -0.1rem;
+  right: -0.1rem;
+  background-color: #e5674e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.375rem;
+  height: 1.375rem;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+span {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 27, 6px;
+}
+
+h6 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  text-align: start;
+}
 .menucafe {
   width: 80%;
   display: flex;
@@ -107,22 +147,8 @@
   flex-direction: row;
   background-color: burlywood;
 }
-
-span {
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 27, 6px;
-}
-
 .dodded {
   padding-top: 23px;
   width: 100px;
   border-bottom: 1px dotted #2f2926;
-}
-
-h6 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
-  text-align: start;
 }
