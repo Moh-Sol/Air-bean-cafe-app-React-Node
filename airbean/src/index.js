@@ -17,7 +17,7 @@ function reducer(state = initialState, action) {
     case "ADD_BEVERAGE": // Lägger till drinken i arrayn.
       return {
             ...state, 
-            beverages: state.beverages.push(action.payload)
+            beverages: [...state.beverages, action.payload]
           }
     case "REMOVE_BEVERAGE": // Tar bort drink 
       let index = state.beverages.indexOf(action.payload);
