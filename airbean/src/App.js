@@ -8,6 +8,7 @@ import Cart from './componenets/Card/Card'
 import Status from './componenets/Status/Status'
 import Error from './componenets/Erorr/Erorr'
 import Landing from './componenets/Landing/Landing'
+import Nav from './componenets/Nav/Nav'
 
 
 
@@ -32,7 +33,7 @@ function App() {
       </Switch>
 
 
-    
+
 
 
     </div>

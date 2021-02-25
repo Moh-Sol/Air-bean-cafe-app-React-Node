@@ -7,40 +7,32 @@ import navStyles from '../Nav/Nav.module.css'
 import x from '../../assets/graphics/close.svg'
 
 export default function Nav(props) {
+
     return (
-    <div className={navStyles.navBody}>
+        <div className={navStyles.navBody}>
 
-        <div 
-        // onClick={()=> props.toggleNav(false)}
-        className={navStyles.xContainer}>
+            <div
+                onClick={() => props.toggleNav(false)}
+                className={navStyles.xContainer}>
+                <img
+                    alt=""
+                    className={navStyles.x}
+                    src={x}
+                ></img>
+            </div>
 
-            <img
-            alt=""
-            className={navStyles.x}
-            src={x}
-            ></img>
-
+            <nav
+                className={navStyles.nav}>
+                <NavLink onClick={() => props.toggleNav(false)}
+                    className={navStyles.menyandcoffe}
+                    to='/menu'
+                >Meny </NavLink>
+                <p className={navStyles.rectangle}></p>
+                <NavLink onClick={() => props.toggleNav(false)}
+                    className={navStyles.menyandcoffe}
+                    to='/about'
+                >Vårt kaffe </NavLink>
+                <p className={navStyles.rectangle}></p>
+            </nav>
         </div>
-
-        <nav className={navStyles.nav}>
-
-            <NavLink 
-            className={navStyles.menyandcoffe}
-            // onClick={()=> props.toggleNav(false)}
-            to='/menu'
-            >Meny </NavLink>
-
-            <p className={navStyles.rectangle}></p>
-
-            <NavLink 
-            className={navStyles.menyandcoffe} 
-            // onClick={()=> props.toggleNav(false)}
-            to='/about'
-            >Vårt kaffe </NavLink>
-
-            <p className={navStyles.rectangle}></p>
-
-        </nav>
-    </div>
-    )
-}
+)}

@@ -1,0 +1,49 @@
+.menuContainer {
+    width: 375px;
+    height: 839px;
+    background: #F3E4E1;
+    margin: 0 auto;
+}
+
+.dataLista {
+    list-style: none;
+}
+
+.listItem {
+    display: flex;
+    background-color: blueviolet;
+    margin: 10px auto;
+}
+
+.listItem div:first-of-type {
+    display: flex;
+    background-color: rgb(177, 134, 218);
+    justify-content: center;
+    align-items: center;
+}
+
+.listItem div:last-of-type {
+    display: flex;
+    background-color: rgb(177, 163, 190);
+}
+
+.imgPlus {
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.headerContainer {
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.imgBag {
+
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+}
