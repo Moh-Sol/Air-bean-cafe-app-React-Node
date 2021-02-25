@@ -25,34 +25,25 @@ function Menu() {
 
     return (
         <>
-            <div className={Styles.menuContainer}>
-                <div className={Styles.headerContainer}>
-                    <HamburgerMenu />
-                    <div>
-                        <span> {beveragesState.length}</span>
-                        <img className={Styles.imgBag} src={bag}></img>
-                    </div>
-                </div>
-                <h1> Meny</h1>
-                <ul className={Styles.dataLista}>
-                    {menuData.map((item) => {
-                        return (
-                            <li className={Styles.listItem} key={item.id}>
-                                <div>
-                                    <img className={Styles.imgPlus} onClick={() => {
-                                        dispatch(addBeverage(item))
-                                    }} src={add}></img>
-                                </div>
-                                <div>
-                                    <span>{item.title}</span>
-                                    <span>{item.price}</span>
-                                    <h6>{item.desc}</h6>
-                                </div>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </div>
+            <h1> Meny</h1>
+            <ul className={Styles.dataLista}>
+                {menuData.map((item) => {
+                    return (
+                        <li className={Styles.listItem} key={item.id}>
+                            <div>
+                                <img className={Styles.imgPlus} onClick={() => {
+                                    dispatch(addBeverage(item))
+                                }} src={add}></img>
+                            </div>
+                            <div>
+                                <span>{item.title}</span>
+                                <span>{item.price}</span>
+                                <h6>{item.desc}</h6>
+                            </div>
+                        </li>
+                    )
+                })}
+            </ul>
             
         </>
 
