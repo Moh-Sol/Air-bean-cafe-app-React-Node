@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Nav from '../Nav/Nav'
 import Styles from './Menu.module.css'
-
+import HamburgerMenu from '../Hamburger-menu/HamburgerMenu'
 
 import add from '../../assets/graphics/add.svg'
 import bag from '../../assets/graphics/bag.svg'
@@ -43,7 +43,8 @@ function Menu() {
                             <img className={Styles.imgBag} src={bag}></img>
                         </div>
                     </div>
-                    <h1> Meny</h1>
+
+                    <h1 className={Styles.menuh1}>Meny</h1>
                     <ul className={Styles.dataLista}>
                         {menuData.map((item) => {
                             return (
@@ -53,10 +54,12 @@ function Menu() {
                                             dispatch(addBeverage(item))
                                         }} src={add}></img>
                                     </div>
-                                    <div>
-                                        <span>{item.title}</span>
-                                        <span>{item.price}</span>
+                                    <div className={Styles.menucafe}>
+                                        
+                                        <span>{item.title} ............................  {item.price} Kr</span>
                                         <h6>{item.desc}</h6>
+
+                                        
                                     </div>
                                 </li>
                             )

@@ -1,49 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+/* font-family: 'PT Serif', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+/* font-family: 'Work Sans', sans-serif; */
+
 .menuContainer {
-    width: 375px;
-    height: 839px;
-    background: #F3E4E1;
-    margin: 0 auto;
+  width: 375px;
+  height: 839px;
+  background: #f3e4e1;
+  position: relative;
+  z-index: -1;
+  margin: 0 auto;
+}
+
+.menuContainer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/graphics/graphics-header.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: inherit;
+}
+.menuContainer::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/graphics/graphics-footer.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: inherit;
+}
+
+.menuh1 {
+  padding: 50px;
+  font-family: "PT Serif", serif;
 }
 
 .dataLista {
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 60%;
+  justify-content: space-between;
 }
 
 .listItem {
-    display: flex;
-    background-color: blueviolet;
-    margin: 10px auto;
+  display: flex;
+  /* background-color: blueviolet; */
 }
 
 .listItem div:first-of-type {
-    display: flex;
-    background-color: rgb(177, 134, 218);
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  /* background-color: rgb(177, 134, 218); */
+  justify-content: center;
+  align-items: center;
 }
 
 .listItem div:last-of-type {
-    display: flex;
-    background-color: rgb(177, 163, 190);
+  display: flex;
+  /* background-color: rgb(177, 163, 190); */
 }
 
 .imgPlus {
-    height: 15px;
-    background-color: black;
-    border-radius: 50%;
+  margin-left: 40px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 2.5px;
 }
 
 .headerContainer {
-    background-color: burlywood;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
 }
 
 .imgBag {
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50%;
+}
 
-    background-color: black;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 50%;
+.navIcon {
+  height: 15px;
+  background-color: #fff;
+}
+
+span {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+
+  line-height: 27, 6px;
+}
+
+h6 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+.menucafe {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
