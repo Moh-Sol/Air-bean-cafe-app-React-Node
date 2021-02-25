@@ -1,49 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+/* font-family: 'PT Serif', serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+/* font-family: 'Work Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .menuContainer {
     width: 375px;
     height: 839px;
-    background: #F3E4E1;
+    background: #f3e4e1;
+    position: relative;
+    z-index: -1;
     margin: 0 auto;
 }
 
+.menuContainer::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/graphics/graphics-header.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: inherit;
+}
+
+.menuContainer::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/graphics/graphics-footer.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: inherit;
+}
+
+.menuh1 {
+    padding: 50px;
+    font-family: "PT Serif", serif;
+}
+
 .dataLista {
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    align-items: center;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
 }
 
 .listItem {
     display: flex;
-    background-color: blueviolet;
+    justify-content: center;
     margin: 10px auto;
+    width: 311px;
+    height: 64px;
+    /* background-color: blueviolet; */
 }
 
 .listItem div:first-of-type {
     display: flex;
-    background-color: rgb(177, 134, 218);
+    /* background-color: rgb(77, 34, 196); */
     justify-content: center;
     align-items: center;
+    margin-right: 15px;
 }
 
 .listItem div:last-of-type {
     display: flex;
-    background-color: rgb(177, 163, 190);
+    /* background-color: rgb(220, 166, 16); */
 }
 
 .imgPlus {
-    height: 15px;
+    /* margin-left: 40px; */
+    height: 30px;
     background-color: black;
     border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: -8px;
+
 }
 
 .headerContainer {
-    background-color: burlywood;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
 }
 
 .imgBag {
-
     background-color: black;
     padding: 10px;
     margin: 10px;
     border-radius: 50%;
+}
+
+.navIcon {
+    height: 15px;
+    /* background-color: #fff; */
+}
+
+/* 
+span {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 27, 6px;
+} */
+
+/* 
+h6 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    text-align: start;
+} */
+
+.menucafe {
+    /* width: 80%;s */
+    display: flex;
+    flex-direction: column;
+    /* background-color: cadetblue; */
+}
+
+.menucafe h6 {
+    width: 194.44px;
+    height: 24px;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 130%;
+    color: #2F2926;
+    text-align: start;
+    padding-left: 8px;
+    margin-top: -13px;
+
+    
+}
+
+.cafe {
+    width: 100%;
+    /* background-color: rgb(159, 169, 196); */
+}
+
+.cafe span {
+    /* display: block; */
+    /* background-color: aqua; */
+    /* width: 100%; */
+}
+
+.cafe span:first-of-type {
+    /* display: block; */
+    width: 194.44px;
+    height: 46px;
+    /* background-color: aqua; */
+    text-align: start;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 120%;
+    color: #2F2926;
+}
+
+.cafe span:last-of-type {
+    width: 76.75px;
+    height: 46px;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 120%;
+    color: #2F2926;
+    /* background-color: burlywood; */
+}
+
+.dodded {
+    display: inline;
+    position: absolute;
+    right: 140px;
+    /* padding-top: 23px; */
+    width: 100px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+    /* border: 1px ; */
 }

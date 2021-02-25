@@ -37,7 +37,7 @@ function Menu() {
             {toggleNav ? <Nav toggleNav={setToggleNav} /> :
                 <div className={Styles.menuContainer}>
                     <div className={Styles.headerContainer}>
-                        <img className={Styles.navIcon} src={navIcon} onClick={()=>{setToggleNav(true)}}></img>
+                        <img className={Styles.navIcon} src={navIcon} onClick={() => { setToggleNav(true) }}></img>
                         <div>
                             <span> {beveragesState.length}</span>
                             <img className={Styles.imgBag} src={bag}></img>
@@ -54,18 +54,18 @@ function Menu() {
                                             dispatch(addBeverage(item))
                                         }} src={add}></img>
                                     </div>
-                                <div className={Styles.menucafe}> 
-                                    
-                                    <div className={Styles.cafe}> 
-                                        <span >{item.title} </span>
-                                        <span className={Styles.dodded}> </span>
-                                        
-                                        <span >{item.price} Kr</span>
-                                    </div> 
-                                        
+                                    <div className={Styles.menucafe}>
+
+                                        <div className={Styles.cafe}>
+                                            <span >{item.title}</span>
+                                            <span className={Styles.dodded}></span>
+
+                                            <span >{item.price} Kr</span>
+                                        </div>
+
                                         <h6>{item.desc}</h6>
-                                 
-                                 </div> 
+
+                                    </div>
                                 </li>
                             )
                         })}
@@ -74,7 +74,8 @@ function Menu() {
             }
         </>
 
- )}
+    )
+}
 
 export default Menu;
 
