@@ -50,22 +50,21 @@ function Menu() {
                             return (
                                 <li className={Styles.listItem} key={item.id}>
                                     <div>
-                                        <img className={Styles.imgPlus} onClick={() => {
+                                            <img className={Styles.imgPlus} onClick={() => {
                                             dispatch(addBeverage(item))
-                                        }} src={add}></img>
+                                            }} src={add}></img>
                                     </div>
-                                <div className={Styles.menucafe}> 
+                                    <div className={Styles.menucafe}> 
                                     
-                                    <div className={Styles.cafe}> 
-                                        <span >{item.title} </span>
-                                        <span className={Styles.dodded}> </span>
-                                        
-                                        <span >{item.price} Kr</span>
-                                    </div> 
+                                        <div className={Styles.cafe}> 
+                                            <span className={Styles.title} >{item.title} </span>
+                                            <span className={Styles.dodded}> </span>
+                                            <span className={Styles.price} >{item.price} Kr</span>
+                                        </div> 
                                         
                                         <h6>{item.desc}</h6>
                                  
-                                 </div> 
+                                    </div> 
                                 </li>
                             )
                         })}

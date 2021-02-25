@@ -37,6 +37,24 @@
   z-index: inherit;
 }
 
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.navIcon {
+  height: 15px;
+  background-color: #fff;
+}
+
+.imgBag {
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
 .menuh1 {
   padding: 50px;
   font-family: "PT Serif", serif;
@@ -76,36 +94,6 @@
   padding: 2.5px;
 }
 
-.headerContainer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-
-.imgBag {
-  background-color: black;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 50%;
-}
-
-.navIcon {
-  height: 15px;
-  background-color: #fff;
-}
-
-span {
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 27, 6px;
-}
-
-h6 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
-  text-align: start;
-}
 .menucafe {
   width: 80%;
   display: flex;
@@ -119,8 +107,28 @@ h6 {
   flex-direction: row;
   background-color: burlywood;
 }
+
+span {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 27, 6px;
+}
+
+.title {
+}
+
 .dodded {
   padding-top: 23px;
   width: 100px;
   border-bottom: 1px dotted #2f2926;
+}
+
+.price {
+}
+
+h6 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  text-align: start;
 }
