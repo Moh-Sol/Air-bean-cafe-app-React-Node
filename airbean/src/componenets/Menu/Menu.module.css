@@ -97,17 +97,30 @@ span {
   font-family: "PT Serif", serif;
   font-weight: 700;
   font-style: normal;
-
   line-height: 27, 6px;
 }
 
 h6 {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
+  text-align: start;
 }
 .menucafe {
-  margin-left: 10px;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+}
+
+.menup {
+  padding-top: 12px;
+
+  border-bottom: 1px dotted black;
+  width: 100px;
+}
+
+.cafe {
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+  justify-items: end;
 }

@@ -54,13 +54,17 @@ function Menu() {
                                             dispatch(addBeverage(item))
                                         }} src={add}></img>
                                     </div>
-                                    <div className={Styles.menucafe}>
+                                <div className={Styles.menucafe}> 
+                                    
+                                    <div className={Styles.cafe}> 
+                                        <span>{item.title} </span>
+                                        <span className={Styles.menup} > </span> 
+                                        <span>{item.price} Kr</span>
+                                    </div> 
                                         
-                                        <span>{item.title} ............................  {item.price} Kr</span>
                                         <h6>{item.desc}</h6>
-
-                                        
-                                    </div>
+                                 
+                                 </div> 
                                 </li>
                             )
                         })}
