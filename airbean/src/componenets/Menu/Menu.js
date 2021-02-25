@@ -57,9 +57,10 @@ function Menu() {
                                 <div className={Styles.menucafe}> 
                                     
                                     <div className={Styles.cafe}> 
-                                        <span>{item.title} </span>
-                                        <span className={Styles.menup} > </span> 
-                                        <span>{item.price} Kr</span>
+                                        <span >{item.title} </span>
+                                        <span className={Styles.dodded}> </span>
+                                        
+                                        <span >{item.price} Kr</span>
                                     </div> 
                                         
                                         <h6>{item.desc}</h6>

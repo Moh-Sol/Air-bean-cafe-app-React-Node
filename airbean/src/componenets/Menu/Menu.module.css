@@ -52,6 +52,7 @@
 
 .listItem {
   display: flex;
+
   /* background-color: blueviolet; */
 }
 
@@ -111,16 +112,15 @@ h6 {
   flex-direction: column;
 }
 
-.menup {
-  padding-top: 12px;
-
-  border-bottom: 1px dotted black;
-  width: 100px;
-}
-
 .cafe {
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   background-color: burlywood;
-  justify-items: end;
+}
+.dodded {
+  padding-top: 23px;
+  width: 100px;
+  border-bottom: 1px dotted #2f2926;
 }
