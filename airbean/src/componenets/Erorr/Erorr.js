@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Erorr(props) {
+function Error(props) {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Erorr(props) {
     );
 }
 
-export default Erorr;
+export default Error;

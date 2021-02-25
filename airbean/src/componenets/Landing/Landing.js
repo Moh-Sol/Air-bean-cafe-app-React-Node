@@ -1,11 +1,7 @@
 import React from 'react';
-
-import {useHistory} from 'react-router-dom'
 import logo from '../../assets/graphics/airbean-landing.svg'
-
-
+import {useHistory} from 'react-router-dom'
 import landingStyles from '../Landing/Landing.module.css'
-
 import landingLeft from '../../assets/graphics/intro-graphic-left.svg'
 import landingRight from '../../assets/graphics/intro-graphic-right.svg'
 
