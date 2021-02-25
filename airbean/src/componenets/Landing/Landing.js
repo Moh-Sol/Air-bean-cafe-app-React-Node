@@ -9,7 +9,7 @@ import logo from '../../assets/graphics/airbean-landing.svg'
 import landingLeft from '../../assets/graphics/intro-graphic-left.svg'
 import landingRight from '../../assets/graphics/intro-graphic-right.svg'
 
-function Landing() {
+export default function Landing() {
 
     const history = useHistory();
 
@@ -31,13 +31,6 @@ function Landing() {
             alt=""
             className={landingStyles.landingRight}
             src={landingRight}></img>
-
         </div>
     );
 }
-
-export default Landing;
-
-
-
-
