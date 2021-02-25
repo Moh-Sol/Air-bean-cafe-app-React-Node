@@ -4,7 +4,11 @@ import logo from '../../assets/graphics/airbean-landing.svg'
 function Landing() {
     return (
         <div>
-            <img src={logo}></img>
+
+
+                <h1></h1>
+
+
         </div>
     );
 }

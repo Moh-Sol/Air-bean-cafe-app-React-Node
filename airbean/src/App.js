@@ -8,6 +8,7 @@ import Cart from './componenets/Card/Card'
 import Status from './componenets/Status/Status'
 import Error from './componenets/Erorr/Erorr'
 import Landing from './componenets/Landing/Landing'
+import Nav from './componenets/Nav/Nav'
 
 
 
@@ -23,7 +24,6 @@ function App() {
     <div className="App">
 
       <Switch>
-     
         <Route path="/landing" component={Landing} />
         <Route path="/menu" component={Menu} />
         <Route path="/about" component={About} />
@@ -33,7 +33,7 @@ function App() {
       </Switch>
 
 
-    
+
 
 
     </div>
