@@ -27,13 +27,15 @@ function Menu() {
 
     return (
     <>
-        <div className="header-container">
-            <HamburgerMenu />
-            <div className={Styles.imgDiv}>
-                <span className={Styles.totalDrinks}> {beveragesState.length}</span>
-                <img className={Styles.imgBag} src={bag}></img>
-            </div>
-        </div>
+        <header className="header-container">
+            <nav className="header-contents">
+                <HamburgerMenu />
+                <div className={Styles.imgDiv}>
+                    <span className={Styles.totalDrinks}> {beveragesState.length}</span>
+                    <img className={Styles.imgBag} src={bag}></img>
+                </div>
+            </nav>
+        </header>
         <div className={Styles.menuContainer}>
                 <h1 className={Styles.menuh1}>Meny</h1>
                 <ul className={Styles.dataLista}>

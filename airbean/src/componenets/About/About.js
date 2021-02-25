@@ -6,9 +6,11 @@ import HamburgerMenu from '../Hamburger-menu/HamburgerMenu'
 function About() {
     return (
         <>
-            <div className="header-container">
-                <HamburgerMenu />
-            </div>
+            <header className="header-container">
+                <nav className="header-contents">
+                    <HamburgerMenu />
+                </nav>
+            </header>
             <main className={style.main}>
                 <div className={style.container}>
                     <h1 className={style.h1}>Vårt kaffe </h1>

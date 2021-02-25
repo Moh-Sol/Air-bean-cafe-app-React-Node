@@ -8,7 +8,7 @@
   min-height: 839px;
   background: #f3e4e1;
   position: relative;
-  z-index: -1;
+  /*z-index: -1; */
   margin: 0 auto;
   padding-top: 4rem;
 }
@@ -46,11 +46,13 @@
 }
 
 .dataLista {
+  position: relative;
   display: flex;
   flex-direction: column;
   list-style: none;
   height: 60%;
   justify-content: space-between;
+  z-index: 2000;
 }
 
 .listItem {
@@ -76,6 +78,7 @@
   background-color: black;
   border-radius: 50%;
   padding: 2.5px;
+    cursor: pointer;
 }
 
 .headerContainer {
