@@ -33,7 +33,7 @@
     height: 95%;
     font-family: PT Serif;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 2.1875rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,11 +47,8 @@
 }
 
 .rectangle{
-    /* border-bottom: solid 1px white; */
-    width: 48px;
+    width: 3rem;
     height: 1px;
-    /* left: 164px; */
-    /* top: 296px; */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 2px;
     margin-bottom: 1rem;

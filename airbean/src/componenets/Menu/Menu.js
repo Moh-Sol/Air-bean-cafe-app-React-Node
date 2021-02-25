@@ -66,26 +66,7 @@ function Menu() {
             }
         </>
 
-  
-
-    console.log(menuData)
-
-    return (
-        <div>
-            <ul className={Styles.dataLista}>
-                {menuData.map((item) => {
-                    return (
-                        <li key={item.id}>
-                            <span>{item.title}</span>
-                            <span>{item.price}</span>
-                            <h6>{item.desc}</h6>
-                        </li>
-                    )})}
-            </ul>
-        </div>
-
-    );
-}
+ )
 
 export default Menu;
 

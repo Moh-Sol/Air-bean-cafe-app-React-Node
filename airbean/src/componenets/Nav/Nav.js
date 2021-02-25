@@ -1,8 +1,5 @@
-
-
-
-
 import React from 'react';
+
 import { NavLink } from 'react-router-dom'
 
 import navStyles from '../Nav/Nav.module.css'
@@ -38,7 +35,4 @@ export default function Nav(props) {
                 <p className={navStyles.rectangle}></p>
             </nav>
         </div>
-
-
-    )
-}
+)}

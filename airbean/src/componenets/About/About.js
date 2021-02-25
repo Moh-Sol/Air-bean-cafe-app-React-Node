@@ -1,5 +1,6 @@
 import React from 'react';
-import Nav from '../Nav/Nav';
+import Nav from '../Nav/Nav'
+
 import style from './About.module.css';
 import image from '../../assets/graphics/eva-cortado.jpg';
 import HamburgerMenu from '../Hamburger-menu/HamburgerMenu'
