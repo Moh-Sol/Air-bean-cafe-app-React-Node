@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Nav from '../Nav/Nav'
 import Styles from './Menu.module.css'
-import HamburgerMenu from '../Hamburger-menu/HamburgerMenu'
+
 
 import add from '../../assets/graphics/add.svg'
 import bag from '../../assets/graphics/bag.svg'
