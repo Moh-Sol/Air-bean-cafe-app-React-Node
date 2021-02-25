@@ -4,7 +4,7 @@ import style from './Hamburger-menu.module.css'
 
 function HamburgerMenu() {
     return(
-        <Link to="/nav">
+        <Link to="/nav" className={style.link}>
             <aside className={style.hamburger}>
                 <span className={style.stick}>
                 </span>

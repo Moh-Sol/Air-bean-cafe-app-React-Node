@@ -7,17 +7,15 @@ import navIcon from '../../assets/graphics/navicon.svg'
 import addBeverage from '../../actions/addBeverage'
 import { useDispatch, useSelector } from 'react-redux'
 import HamburgerMenu from '../Hamburger-menu/HamburgerMenu'
+import Cart from '../Card/Card'
 
 
 function Menu() {
     const beveragesState = useSelector(state => {
         return state.beverages;
     })
-
     const dispatch = useDispatch()
-
     const [menuData, setMenuData] = useState([]);
-
     useEffect(async () => {
         const response = await fetch(`http://localhost:5000/api/beans`);
         const data = await response.json();

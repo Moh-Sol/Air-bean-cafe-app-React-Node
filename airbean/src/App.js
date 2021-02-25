@@ -21,14 +21,14 @@ function App() {
     <div className="App">
 
       <Switch>
+        <Redirect exact path="/" to="/landing"/>
         <Route path="/landing" component={Landing} />
         <Route path="/menu" component={Menu} />
-        <Route path="/nav" component={Nav} />
         <Route path="/about" component={About} />
+        <Route path="/nav" component={Nav} />
         <Route path="/cart/" component={Cart} />
         <Route path="/status/" component={Status} />
         <Route component={Error} />
-        <Redirect from="/" to="/landing"/>
       </Switch>
     </div>
   );

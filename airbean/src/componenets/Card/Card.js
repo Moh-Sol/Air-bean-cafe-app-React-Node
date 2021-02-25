@@ -1,10 +1,34 @@
 import React from 'react';
-function Card() {
+import {useSelector, useDispatch} from 'react-redux';
+import style from './Card.module.css'
+import addBeverage from '../../actions/addBeverage';
+import removeBeverage from '../../actions/removeBeverage';
+
+function Cart() {
+    const beverages = useSelector(state => state.beverages);
+
+    const dispatch = useDispatch();
+    console.log(beverages)
     return (
-        <div>
+        <main>
             <h1>Din beställning</h1>
-        </div>
+            <ul>
+            {beverages.map( (beverage, index) => {
+                return (
+                    <li>
+                        <h3>{beverage.title}</h3>
+                        <p>{beverage.price}</p>
+                        <span>{}</span>
+                    </li>
+                )
+            })}
+            </ul>
+            <div>
+                <h3>Total: </h3>
+                <h3> {} </h3>
+            </div>
+        </main>
     );
 }
 
-export default Card;
+export default Cart;
