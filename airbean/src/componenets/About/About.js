@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Nav from '../Nav/Nav';
 
 import style from './About.module.css';
@@ -6,11 +7,15 @@ import image from '../../assets/graphics/eva-cortado.jpg';
 import HamburgerMenu from '../Hamburger-menu/HamburgerMenu'
 
 function About(props) {
+
+    
+        
     return (
         <main className={style.main}>
             <HamburgerMenu />
             <div className={style.container}>
-                <h1 className={style.h1} data-testid="lettervalue">Vårt kaffe </h1>
+           
+                <h1 className={style.h1} >Vårt kaffe</h1>
                 <p className={style.p}>
                     <strong className={style.strong}>Pumpkin spice mug, barista cup, sit macchiato, kopi-luwak, doppio, grounds dripper, crema, strong whipped, variety extra iced id lungo half and half mazagran. Pumpkin spice.</strong>
                 </p>
@@ -23,7 +28,7 @@ function About(props) {
             </div>
             <section className={style.section}>
                 <img src={image} className={style.img}/>
-                <h2 className={style.h2}>Eva Cortado</h2>
+                <h2  className={style.h2}>Eva Cortado</h2>
                 <p className={style.p}> VD & Grundare </p>
             </section>
         </main>
