@@ -49,8 +49,7 @@ function Cart() {
     function handleClickSave() {
 
         localStorage.setItem('chosenBeverages',JSON.stringify(chosenBeverages) );
-        // let showDataIStorage = localStorage.getItem('chosenBeverages');
-        // console.log ( 'data i local storge ',JSON.parse( showDataIStorage))
+       
     }
 
 
