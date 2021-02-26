@@ -1,15 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 /* font-family: 'PT Serif', serif; */
+
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 /* font-family: 'Work Sans', sans-serif; */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .menuContainer {
-  width: 100%;
-  min-height: 839px;
+  width: 375px;
+  height: 839px;
   background: #f3e4e1;
   position: relative;
+  z-index: -1;
   margin: 0 auto;
-  padding-top: 4rem;
 }
 
 .menuContainer::before {
@@ -24,6 +31,7 @@
   background-position: top;
   z-index: inherit;
 }
+
 .menuContainer::after {
   position: absolute;
   content: "";
@@ -40,22 +48,22 @@
 .menuh1 {
   padding: 50px;
   font-family: "PT Serif", serif;
-  font-size: 2.625rem;
-  color: #2f2926;
 }
 
 .dataLista {
-  position: relative;
   display: flex;
   flex-direction: column;
   list-style: none;
-  height: 60%;
-  justify-content: space-between;
-  z-index: 2000;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .listItem {
   display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  width: 311px;
+  height: 64px;
 }
 
 .listItem div:first-of-type {
@@ -63,20 +71,22 @@
 
   justify-content: center;
   align-items: center;
+  margin-right: 15px;
 }
 
 .listItem div:last-of-type {
   display: flex;
-  /* background-color: rgb(177, 163, 190); */
 }
 
 .imgPlus {
-  margin-left: 40px;
-  height: 20px;
+  height: 30px;
   background-color: black;
   border-radius: 50%;
-  padding: 2.5px;
-  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: -8px;
 }
 
 .headerContainer {
@@ -85,70 +95,70 @@
   padding-top: 10px;
 }
 
-.imgDiv {
-  background-color: #2f2926;
-  height: 3.75rem;
-  width: 3.75rem;
-  padding: 10px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
 .imgBag {
-  text-align: center;
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50%;
 }
 
 .navIcon {
   height: 15px;
-  background-color: #fff;
 }
 
-.totalDrinks {
-  position: absolute;
-  top: -0.1rem;
-  right: -0.1rem;
-  background-color: #e5674e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1.375rem;
-  height: 1.375rem;
-  border-radius: 50%;
-  text-align: center;
-  color: #fff;
-  font-size: 0.875rem;
-}
-
-span {
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 27, 6px;
-}
-
-h6 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
-  text-align: start;
-}
 .menucafe {
-  width: 80%;
   display: flex;
   flex-direction: column;
 }
 
+.menucafe h6 {
+  width: 194.44px;
+  height: 24px;
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 130%;
+  color: #2f2926;
+  text-align: start;
+  padding-left: 8px;
+  margin-top: -13px;
+}
+
 .cafe {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  background-color: burlywood;
 }
+
+.cafe span {
+}
+
+.cafe span:first-of-type {
+  width: 194.44px;
+  height: 46px;
+  text-align: start;
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 120%;
+  color: #2f2926;
+}
+
+.cafe span:last-of-type {
+  width: 76.75px;
+  height: 46px;
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 120%;
+  color: #2f2926;
+}
+
 .dodded {
-  padding-top: 23px;
+  display: inline;
+  position: absolute;
+  right: 140px;
   width: 100px;
-  border-bottom: 1px dotted #2f2926;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
 }
