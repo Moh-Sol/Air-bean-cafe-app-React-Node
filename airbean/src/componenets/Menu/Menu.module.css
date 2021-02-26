@@ -37,6 +37,17 @@
   z-index: inherit;
 }
 
+.uglyBox {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.603);
+    position: absolute;
+    z-index: 9000;
+    top: 1rem;
+    left: 1rem;
+}
+
 .menuh1 {
   padding: 50px;
   font-family: "PT Serif", serif;
