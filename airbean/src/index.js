@@ -37,6 +37,14 @@ function reducer(state = initialState, action) {
         ...state,
         beverages: newBeverages
       };
+
+
+      case "NEW_ORDER": // tar bort alla drink .
+      return {
+        ...state,
+        beverages: []
+      };
+
     default:
       return state;
   }
