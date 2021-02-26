@@ -4,14 +4,14 @@ import './App.css';
 import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
 import Menu from './componenets/Menu/Menu'
 import About from './componenets/About/About'
-import Cart from './componenets/Card/Card'
+// import Cart from './componenets/Card/Card'
 import Status from './componenets/Status/Status'
 import Error from './componenets/Erorr/Erorr'
 import Landing from './componenets/Landing/Landing'
 import Nav from './componenets/Nav/Nav'
 
 function App() {
-  const history = useHistory();
+  // const history = useHistory();
 
   useEffect(() => {
     // history.push('/landing')
