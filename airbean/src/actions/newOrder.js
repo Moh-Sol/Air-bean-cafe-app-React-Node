@@ -4,7 +4,6 @@
 
 
 const newOrder = () => ({
-
     type: "NEW_ORDER",
 });
 
