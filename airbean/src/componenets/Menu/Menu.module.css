@@ -1,48 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 /* font-family: 'PT Serif', serif; */
-
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 /* font-family: 'Work Sans', sans-serif; */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .menuContainer {
-    width: 375px;
-    height: 839px;
-    background: #f3e4e1;
-    position: relative;
-    z-index: -1;
-    margin: 0 auto;
+  width: 100%;
+  min-height: 839px;
+  background: #f3e4e1;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 4rem;
 }
 
 .menuContainer::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("../../assets/graphics/graphics-header.svg");
-    background-repeat: no-repeat;
-    background-position: top;
-    z-index: inherit;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/graphics/graphics-header.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: inherit;
+}
+.menuContainer::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/graphics/graphics-footer.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: inherit;
 }
 
-.menuContainer::after {
+.hiddenBox {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.603);
     position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("../../assets/graphics/graphics-footer.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    z-index: inherit;
+    z-index: 9000;
+    top: 1rem;
+    left: 1rem;
+}
+
+.menuh1 {
+  padding: 50px;
+  font-family: "PT Serif", serif;
+  font-size: 2.625rem;
+  color: #2F2926;
 }
 
 .menuh1 {
@@ -56,7 +66,18 @@
     list-style: none;
     align-items: center;
     margin: 0 auto;
-    /* background-color: aquamarine; */
+    position: relative;
+    z-index: 10;
+}
+
+.dropdownArrow {
+    height: 1.35rem;
+    width: 1.35rem;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    transform: rotate(45deg); /* Standard */
+    background: #fff;
+    position: absolute;
+    bottom: -1rem;
 }
 
 .listItem {
@@ -80,9 +101,21 @@
     display: flex;
     /* background-color: rgb(220, 166, 16); */
 }
+.imgDiv {
+    background-color: #2F2926;
+    height: 3.75rem;
+    width: 3.75rem;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+}
 
 .imgPlus {
-    /* margin-left: 40px; */
     height: 30px;
     background-color: black;
     border-radius: 50%;
@@ -91,41 +124,40 @@
     justify-items: center;
     align-items: center;
     margin-top: -8px;
-
+    cursor: pointer;
 }
 
 .headerContainer {
     display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
 .imgBag {
-    background-color: black;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 50%;
+    text-align: center;
 }
 
+.totalDrinks {
+    position: absolute;
+    top: -0.1rem;
+    right: -0.1rem;
+    background-color: #E5674E;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 1.375rem;
+    height: 1.375rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: .875rem;
+}
 .navIcon {
     height: 15px;
     /* background-color: #fff; */
 }
-
-/* 
-span {
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 27, 6px;
-} */
-
-/* 
-h6 {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    text-align: start;
-} */
 
 .menucafe {
     /* width: 80%;s */
@@ -146,8 +178,6 @@ h6 {
     text-align: start;
     padding-left: 8px;
     margin-top: -13px;
-
-    
 }
 
 .cafe {
@@ -155,11 +185,6 @@ h6 {
     /* background-color: rgb(159, 169, 196); */
 }
 
-.cafe span {
-    /* display: block; */
-    /* background-color: aqua; */
-    /* width: 100%; */
-}
 
 .cafe span:first-of-type {
     /* display: block; */

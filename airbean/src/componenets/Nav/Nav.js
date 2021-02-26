@@ -1,18 +1,16 @@
 import React from 'react';
-
-import { NavLink } from 'react-router-dom'
-
+import { NavLink, useHistory } from 'react-router-dom'
 import navStyles from '../Nav/Nav.module.css'
-
 import x from '../../assets/graphics/close.svg'
 
-export default function Nav(props) {
+export default function Nav() {
+    const history = useHistory();
 
     return (
         <div className={navStyles.navBody}>
 
             <div
-                onClick={() => props.toggleNav(false)}
+                onClick={() => history.goBack()}
                 className={navStyles.xContainer}>
                 <img
                     alt=""
@@ -23,14 +21,14 @@ export default function Nav(props) {
 
             <nav
                 className={navStyles.nav}>
-                <NavLink onClick={() => props.toggleNav(false)}
-                    className={navStyles.menyandcoffe}
-                    to='/menu'
+                <NavLink
+                className={navStyles.menyandcoffe}
+                to='/menu'
                 >Meny </NavLink>
                 <p className={navStyles.rectangle}></p>
-                <NavLink onClick={() => props.toggleNav(false)}
-                    className={navStyles.menyandcoffe}
-                    to='/about'
+                <NavLink
+                className={navStyles.menyandcoffe}
+                to='/about'
                 >Vårt kaffe </NavLink>
                 <p className={navStyles.rectangle}></p>
             </nav>
