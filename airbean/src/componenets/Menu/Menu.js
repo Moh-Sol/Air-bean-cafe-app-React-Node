@@ -30,7 +30,7 @@ function Menu() {
     <>
         <header className="header-container">
             <nav className="header-contents">
-                {toggleCart ? <div className={Styles.uglyBox}></div> : ''}
+                {toggleCart ? <div className={Styles.hiddenBox}></div> : ''}
                 <HamburgerMenu />
                 <div className={Styles.imgDiv} onClick={() => setToggleCart(!toggleCart)}>
                     <span className={Styles.totalDrinks}> {beveragesState.length}</span>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {useSelector, useDispatch} from 'react-redux';
+import {Link} from 'react-router-dom';
 import addBeverage from '../../actions/addBeverage';
 import removeBeverage from '../../actions/removeBeverage';
 import arrowUp from '../../assets/graphics/arrow-up.svg';
@@ -74,7 +75,7 @@ function Cart() {
                         <h3> {totalPrice} Kr</h3>
                     </div>
                     <p>inkl moms + drönarleverans</p>
-                    <button className={style.btn}>Take my money!</button>
+                    <Link to="/status" className={style.btn}>Take my money!</Link>
                 </footer>
             </section>
         </main>
