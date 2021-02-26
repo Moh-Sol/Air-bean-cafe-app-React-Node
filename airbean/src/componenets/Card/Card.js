@@ -27,6 +27,8 @@ function Cart() {
         beverageList.push({...menu[i], amountOfOrder: 0});
     }
 
+    // console.log(beverageList)
+
     for (let i = 0; i < beverageList.length; i++){
         for (let j = 0; j < chosenBeverages.length; j++){
             if ( chosenBeverages[j].id === beverageList[i].id ){
@@ -36,6 +38,7 @@ function Cart() {
     }
 
     const beveragesToDisplay = beverageList.filter((beverage) => beverage.amountOfOrder > 0);
+    console.log(beveragesToDisplay )
 
     let totalPrice = 0;
 
