@@ -10,7 +10,4 @@ app.use(cors())
 app.use(express.json())
 app.use('/api/beans', beansRouter)
 
-
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
-=======
 app.listen(PORT, () => console.log(`Server started on port  http://localhost${PORT}`))
