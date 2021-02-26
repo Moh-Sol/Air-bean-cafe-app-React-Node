@@ -10,7 +10,7 @@ function About(props) {
         <main className={style.main}>
             <HamburgerMenu />
             <div className={style.container}>
-                <h1 className={style.h1}>Vårt kaffe </h1>
+                <h1 className={style.h1} data-testid="lettervalue">Vårt kaffe </h1>
                 <p className={style.p}>
                     <strong className={style.strong}>Pumpkin spice mug, barista cup, sit macchiato, kopi-luwak, doppio, grounds dripper, crema, strong whipped, variety extra iced id lungo half and half mazagran. Pumpkin spice.</strong>
                 </p>
