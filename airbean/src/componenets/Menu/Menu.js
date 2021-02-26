@@ -23,7 +23,6 @@ function Menu() {
         const response = await fetch(`http://localhost:5000/api/beans`);
         const data = await response.json();
         setMenuData(data.menu)
-
     }, [])
 
     return (
@@ -38,6 +37,7 @@ function Menu() {
                     {toggleCart ? <span className={Styles.dropdownArrow}></span> : ""}
                 </div>
             </nav>
+            {toggleCart ? <Cart /> : ''}
         </header>
         <div className={Styles.menuContainer}>
         {toggleCart ? <Cart /> : ""}
