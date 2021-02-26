@@ -26,12 +26,7 @@ function Menu() {
     }, [])
 
 
-    useEffect( () => {
-        let showDataIStorage = localStorage.getItem('chosenBeverages');
-        console.log ( 'data i local storge ',JSON.parse( showDataIStorage))
-       let dataFromStorage = JSON.parse( showDataIStorage)
-       dataFromStorage.forEach(item=> dispatch(addBeverage(item)))
-    }, [])
+
 
 
 

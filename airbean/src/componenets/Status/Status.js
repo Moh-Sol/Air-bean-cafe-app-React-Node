@@ -39,6 +39,7 @@ function Status() {
         setEta(data.eta)
         setOrderNr(data.orderNr)
         dispatch(newOrder())
+         localStorage.removeItem('chosenBeverages');
 
     }, []);
 
