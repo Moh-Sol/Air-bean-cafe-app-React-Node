@@ -16,7 +16,6 @@ function Cart() {
         fetch(`http://localhost:5000/api/beans`)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             setMenu(data.menu);
         })
     }, [chosenBeverages]);
@@ -27,9 +26,6 @@ function Cart() {
         beverageList.push({...menu[i], amountOfOrder: 0});
     }
 
-    console.log(chosenBeverages);
-    console.log('beverageList', beverageList);
-
     for (let i = 0; i < beverageList.length; i++){
         for (let j = 0; j < chosenBeverages.length; j++){
             if ( chosenBeverages[j].id === beverageList[i].id ){
@@ -38,30 +34,48 @@ function Cart() {
         }
     }
 
-    console.log('Efter andra loopen');
-    console.log('beverageList', beverageList);
+    const beveragesToDisplay = beverageList.filter((beverage) => beverage.amountOfOrder > 0);
 
+    let totalPrice = 0;
+
+    for (let i = 0; i < beveragesToDisplay.length; i++){
+        totalPrice = totalPrice + beveragesToDisplay[i].amountOfOrder * beveragesToDisplay[i].price;
+    }
     return (
         <main className={style.cartContainer}>
             <section className={style.cartContents}>
-                <h1>Din beställning</h1>
-                <ul>
-                    {chosenBeverages.map( (beverage, index) => {
+                <h1 className={style.h1}>Din beställning</h1>
+                <ul className={style.ul}>
+                    {beveragesToDisplay.map( (beverage, index) => {
                         return (
                             <li key={index}>
-                                <h3>{beverage.title}</h3>
-                                <p>{beverage.price}</p>
-                                <img src={arrowUp} className={style.arrowUp} onClick={() => dispatch(addBeverage(beverage))}/>
-                                <span>{}</span>
-                                <img src={arrowDown} className={style.arrowDown} onClick={() => dispatch(removeBeverage(beverage))} />
+                                <aside>
+                                    <h3>{beverage.title}</h3>
+                                    <p>{beverage.price * beverage.amountOfOrder} Kr</p>
+                                </aside>
+                                <aside>
+                                    <hr />
+                                </aside>
+                                <aside>
+                                    <img src={arrowUp} className={style.arrow} onClick={() => dispatch(addBeverage(beverage))}/>
+                                    <span>{beverage.amountOfOrder}</span>
+                                    <img src={arrowDown} className={style.arrow} onClick={() => dispatch(removeBeverage(beverage))} />
+                                </aside>
                             </li>
                         )
                     })}
                 </ul>
-                <div>
-                    <h3>Total: </h3>
-                    <h3> {} </h3>
-                </div>
+                <footer className={style.footer}>
+                    <div>
+                        <h3>Total: </h3>
+                        <div>
+                            <hr />
+                        </div>
+                        <h3> {totalPrice} Kr</h3>
+                    </div>
+                    <p>inkl moms + drönarleverans</p>
+                    <button className={style.btn}>Take my money!</button>
+                </footer>
             </section>
         </main>
     );
