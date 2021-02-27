@@ -20,6 +20,7 @@ function App() {
     let showDataIStorage = localStorage.getItem('chosenBeverages');
     console.log('data i local storge ', JSON.parse(showDataIStorage))
     let dataFromStorage = JSON.parse(showDataIStorage)
+    if (dataFromStorage !== null)
     dataFromStorage.forEach(item => dispatch(addBeverage(item)))
   }, [])
 
