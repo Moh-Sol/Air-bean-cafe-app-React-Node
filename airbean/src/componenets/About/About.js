@@ -12,11 +12,11 @@ function About(props) {
         
     return (
         <main className={style.main}>
-            <HamburgerMenu />
+             <HamburgerMenu />   
             <div className={style.container}>
            
-                <h1 className={style.h1} >Vårt kaffe</h1>
-                <p className={style.p}>
+                <h1  className={style.h1} >Vårt kaffe</h1>
+                <p data-testid="lettervalue" className={style.p}>
                     <strong className={style.strong}>Pumpkin spice mug, barista cup, sit macchiato, kopi-luwak, doppio, grounds dripper, crema, strong whipped, variety extra iced id lungo half and half mazagran. Pumpkin spice.</strong>
                 </p>
                 <p className={style.p}>
@@ -27,7 +27,7 @@ function About(props) {
                 </p>
             </div>
             <section className={style.section}>
-                <img src={image} className={style.img}/>
+                <img src={image}  className={style.img}/>
                 <h2  className={style.h2}>Eva Cortado</h2>
                 <p className={style.p}> VD & Grundare </p>
             </section>

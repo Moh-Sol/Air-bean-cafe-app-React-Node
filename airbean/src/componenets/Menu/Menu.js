@@ -37,7 +37,7 @@ function Menu() {
                     {toggleCart ? <span className={Styles.dropdownArrow}></span> : ""}
                 </div>
             </nav>
-            {toggleCart ? <Cart /> : ''}
+          
         </header>
         <div className={Styles.menuContainer}>
         {toggleCart ? <Cart /> : ""}

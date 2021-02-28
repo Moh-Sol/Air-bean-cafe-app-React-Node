@@ -1,15 +1,20 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+/* import {Link} from 'react-router-dom'; */
 import style from './Hamburger-menu.module.css'
+import { useHistory } from 'react-router-dom'
 
 function HamburgerMenu() {
+
+    const history = useHistory();
     return(
-        <Link to="/nav">
-            <aside className={style.hamburger}>
+       
+        <div onClick={() => {history.push('/nav')}} >
+            <aside onClick={() => history.push('/nav')} className={style.hamburger}>
                 <span className={style.stick}>
                 </span>
             </aside>
-        </Link>
+        </div>
+      
     )
 }
 

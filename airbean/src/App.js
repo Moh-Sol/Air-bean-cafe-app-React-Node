@@ -24,11 +24,13 @@ function App() {
     <div className="App">
 
       <Switch>
+
         <Route path="/landing" component={Landing} />
         <Route path="/menu" component={Menu} />
         <Route path="/about" component={About} />
-        <Route path="/cart/" component={Cart} />
-        <Route path="/status/" component={Status} />
+        <Route path="/nav" component={Nav} />
+        <Route path="/cart" component={Cart} />
+        <Route path="/status" component={Status} />
         <Route component={Error} />
       </Switch>
 
