@@ -1,5 +1,27 @@
-// // import Menu from '../Menu'
-// // import React from 'react';
+import React from 'react';
+import shallow from 'enzyme'
+import Menu from '../Menu'
+
+
+it ('render without crashing',()=> {
+
+// const div = document.createElement('div');
+// ReactDOM.render(    <Provider store={reducer}><Menu/></Provider>,div)
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // import ReactDOM from 'react-dom';
 // // import { render, getByTestId, fireEvent } from '@testing-library/react';
 // // import { Provider } from 'react-redux';
