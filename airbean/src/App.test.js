@@ -1,70 +1,25 @@
-import { render, getByTextId  } from '@testing-library/react';
-import React from 'react';
-import About from './componenets/About/About'
-
-  /* test('right text', () => {
-  const { container } = render(<About />); 
-   const letterValue = getByTextId(container, 'lettervalue');
-   expect(letterValue.textContent ("Vårt kaffe"));
-});   */
-  
-
- /* test ('right text' , () => {
-    const { container } = render(<About />)
-    const letterValue = getByTextId(container, 'lettervalue');
-    expect(letterValue.textContent ('Vårt kaffe'));
- })   
- */
- /* test('Example test', () => {
-   render (<About/>)
-   expect(screen.getByTestId('heading')).toHaveTextContent('Vårt kaffe')
- }); */
+// import { render, screen } from '@testing-library/react';
+// import App from './App';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import { Provider } from 'react-redux';
+// import { createStore } from 'redux';
+// import 'jest-dom/extend-expect'
 
 
-// Klart med test About.js , HamburgerMenu testas inte här utan för sig själv. funkar testingen för den komponenten så ska den fungera här i About.js också.
 
-     test ('right text' , () => {
-      const rendered = render(<About />)
-      expect(rendered.getByText('Vårt kaffe'));
-      
-})   
 
-test ('right text' , () => {
-  const rendered = render(<About />)
-    expect(rendered.getByText('Pumpkin spice mug, barista cup, sit macchiato, kopi-luwak, doppio, grounds dripper, crema, strong whipped, variety extra iced id lungo half and half mazagran. Pumpkin spice.'));
+// // test('renders learn react link', () => {
+// //   render(<App />);
+// //   const linkElement = screen.getByText(/learn react/i);
+// //   expect(linkElement).toBeInTheDocument();
+// // });
+
+
+
+// test ('render without crashing',()=> {
+
+//     const div = document.createElement('div');
+//     ReactDOM.render(  <App/>,div)
     
-})  
-
-test ('right text' , () => {
-  const rendered = render(<About />)
-    expect(rendered.getByText('Que dark fair trade, spoon decaffeinated, barista wings whipped, as rich aftertaste, con panna milk black, arabica white rich beans single shot extra affogato. So affogato macchiato sit extraction instant grinder seasonal organic, turkish single shot, single origin, and robusta strong to go so dripper. Viennese froth, grounds caramelization skinny aromatic cup kopi-luwak, fair trade flavour, frappuccino medium, café au lait flavour cultivar ut bar instant kopi-luwak.'));
-    
-}) 
-
-test ('right text' , () => {
-  const rendered = render(<About />)
-    expect(rendered.getByText('Roast id macchiato, single shot siphon mazagran milk fair trade est aroma a half and half and, so, galão iced to go, whipped as cream cup pumpkin spice iced. At extra, rich grinder, brewed to go, steamed half and half at, that, percolator macchiato trifecta and body as arabica dripper. In galão black java milk sit trifecta, robusta, acerbic café au lait instant shop latte. Seasonal bar shop filter aroma id, crema, affogato viennese cultivar aftertaste, seasonal, percolator cream black, galão flavour, milk aromatic turkish skinny crema.'));
-    
-})    
-describe('women founder', () => {
-  it('profile ', () => {
-    render(< About/>)
-    const displayedImage = document.querySelector("img");
-    expect(displayedImage.src).toContain("eva-cortado.jpg");
-  })
-}); 
-
-test ('right text' , () => {
-  const rendered = render(<About />)
-    expect(rendered.getByText('Eva Cortado'));
-    
-})  
-
-test ('right text' , () => {
-  const rendered = render(<About />)
-    expect(rendered.getByText('VD & Grundare'));
-    
-})   
-
-
-// Här är i About.js har testat.
+//     })

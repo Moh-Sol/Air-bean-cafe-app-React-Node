@@ -1,13 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
 import Styles from './Status.module.css'
 import drone from '../../assets/graphics/drone.svg'
+import newOrder from '../../actions/newOrder'
+
+
+
+
 
 function Status() {
 
     const [orderNr, setOrderNr] = useState('');
     const [eta, setEta] = useState('');
+    const dispatch = useDispatch();
+    const history = useHistory();
 
 
 
@@ -30,6 +38,8 @@ function Status() {
         console.log(data)
         setEta(data.eta)
         setOrderNr(data.orderNr)
+        dispatch(newOrder())
+         localStorage.removeItem('chosenBeverages');
 
     }, []);
 
@@ -42,7 +52,7 @@ function Status() {
             <img className={Styles.drone} src={drone}></img>
             <h1> Din beställning är på väg!</h1>
             <span> {eta} </span>  <span> minuter</span>
-            <button> ok, cool! </button>
+            <button onClick={()=>{ history.push('/landing')}}> ok, cool! </button>
         </div>
     );
 }
