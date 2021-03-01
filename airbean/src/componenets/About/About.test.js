@@ -1,10 +1,10 @@
 
 
-
-import { render, getByTestId, fireEvent } from '@testing-library/react';
-// import {createStore} from 'redux';
-// import {createStore} from 'react-redux';
 import About from './About'
+
+import { render, getByTestId, fireEvent ,getByText,screen } from '@testing-library/react';
+
+
 
 // it('h1 visar Vårt kaffe ', () => {
 //     const { container } = render(<About />);
