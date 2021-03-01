@@ -74,5 +74,7 @@
     color: #2F2926;
     background: #FFFFFF;
     border-radius: 50px;
-    border : none
+    border : none;
+    outline: none;
+
 }
