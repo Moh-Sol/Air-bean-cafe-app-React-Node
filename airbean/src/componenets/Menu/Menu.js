@@ -30,9 +30,9 @@ function Menu() {
 
 
     return (
-    <>
+    <div className={Styles.wrap}>
         <header className="header-container">
-            <nav className="header-contents">
+            <nav className={Styles.MenuNav}>
                 {toggleCart ? <div className={Styles.hiddenBox}></div> : ''}
                 <HamburgerMenu />
                 <div className={Styles.imgDiv} onClick={() => setToggleCart(!toggleCart)}>
@@ -72,7 +72,7 @@ function Menu() {
                 })}
             </ul>
         </div>
-    </>
+    </div>
  )}
 
 export default Menu;

@@ -5,9 +5,9 @@ import HamburgerMenu from '../Hamburger-menu/HamburgerMenu'
 
 function About() {
     return (
-        <>
+        <div className={style.wrap}>
             <header className="header-container">
-                <nav className="header-contents">
+                <nav className={style.headerContents}>
                     <HamburgerMenu />
                 </nav>
             </header>
@@ -30,7 +30,7 @@ function About() {
                     <p className={style.p}> VD & Grundare </p>
                 </section>
             </main>
-        </>
+        </div>
     );
 }
 
