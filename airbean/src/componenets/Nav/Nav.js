@@ -2,12 +2,17 @@ import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom'
 import navStyles from '../Nav/Nav.module.css'
 import x from '../../assets/graphics/close.svg'
+import { motion } from 'framer-motion'
+
 
 export default function Nav() {
     const history = useHistory();
 
     return (
-        <div className={navStyles.navBody}>
+        <motion.div className={navStyles.navBody}
+        initial={{x:'-100vw'}}
+        animate={{x:0}}
+        >
 
             <div
                 onClick={() => history.goBack()}
@@ -32,5 +37,5 @@ export default function Nav() {
                 >Vårt kaffe </NavLink>
                 <p className={navStyles.rectangle}></p>
             </nav>
-        </div>
+        </motion.div>
 )}

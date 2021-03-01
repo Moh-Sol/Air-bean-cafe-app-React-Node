@@ -6,6 +6,7 @@ import removeBeverage from '../../actions/removeBeverage';
 import arrowUp from '../../assets/graphics/arrow-up.svg';
 import arrowDown from '../../assets/graphics/arrow-down.svg';
 import style from './Card.module.css'
+import { motion } from 'framer-motion'
 
 function Cart() {
     const [menu, setMenu] = useState([])
@@ -56,7 +57,10 @@ function Cart() {
 
 
     return (
-        <main className={style.cartContainer}>
+        <motion.main className={style.cartContainer}
+        initial={{x:'+100vw'}}
+        animate={{x:0}}
+        >
             <section className={style.cartContents}>
                 <h1 className={style.h1}>Din beställning</h1>
                 <ul className={style.ul}>
@@ -92,7 +96,7 @@ function Cart() {
                     <button className={style.btn} onClick={handleClickSave}> Save your shopping cart </button>
                 </footer>
             </section>
-        </main>
+        </motion.main>
     );
 }
 
