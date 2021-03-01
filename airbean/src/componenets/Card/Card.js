@@ -50,6 +50,7 @@ function Cart() {
     function handleClickSave() {
 
         localStorage.setItem('chosenBeverages',JSON.stringify(chosenBeverages) );
+        alert(' Your shopping cart is saved')
        
     }
 
