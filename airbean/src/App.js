@@ -1,27 +1,43 @@
 
 import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux'
+
 import './App.css';
-import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import Menu from './componenets/Menu/Menu'
 import About from './componenets/About/About'
-import Cart from './componenets/Card/Card'
+// import Cart from './componenets/Card/Card'
 import Status from './componenets/Status/Status'
 import Error from './componenets/Erorr/Erorr'
 import Landing from './componenets/Landing/Landing'
 import Nav from './componenets/Nav/Nav'
+import addBeverage from './actions/addBeverage'
 
 function App() {
-  const history = useHistory();
+  const dispatch = useDispatch()
 
   useEffect(() => {
-    // history.push('/landing')
+    let showDataIStorage = localStorage.getItem('chosenBeverages');
+    console.log('data i local storge ', JSON.parse(showDataIStorage))
+    let dataFromStorage = JSON.parse(showDataIStorage)
+    if (dataFromStorage !== null)
+    dataFromStorage.forEach(item => dispatch(addBeverage(item)))
   }, [])
+
+
+ 
+
+
+
+
+
+
 
   return (
     <div className="App">
 
       <Switch>
-        <Redirect exact path="/" to="/landing"/>
+        <Redirect exact path="/" to="/landing" />
         <Route path="/landing" component={Landing} />
         <Route path="/menu" component={Menu} />
         <Route path="/about" component={About} />

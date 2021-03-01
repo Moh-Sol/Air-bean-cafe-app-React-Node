@@ -4,14 +4,15 @@ import {useHistory} from 'react-router-dom'
 import landingStyles from '../Landing/Landing.module.css'
 import landingLeft from '../../assets/graphics/intro-graphic-left.svg'
 import landingRight from '../../assets/graphics/intro-graphic-right.svg'
+import { motion } from 'framer-motion'
 
 export default function Landing() {
 
     const history = useHistory();
 
     return (
-        <div
-        onClick={()=> history.push('/menu')}
+        <motion.div
+        onClick={()=> history.push('/menu') }
         className={landingStyles.landingBody}>
 
             <img 
@@ -27,6 +28,6 @@ export default function Landing() {
             alt=""
             className={landingStyles.landingRight}
             src={landingRight}></img>
-        </div>
+        </motion.div>
     );
 }

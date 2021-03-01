@@ -12,7 +12,7 @@ const initialState = {
   beverages: []
 }
 
-function reducer(state = initialState, action) {
+export function reducer(state = initialState, action) {
   switch (action.type) {
     case "ADD_BEVERAGE": // Lägger till drinken i arrayn.
       return {
@@ -37,6 +37,14 @@ function reducer(state = initialState, action) {
         ...state,
         beverages: newBeverages
       };
+
+
+      case "NEW_ORDER": // tar bort alla drink .
+      return {
+        ...state,
+        beverages: []
+      };
+
     default:
       return state;
   }
