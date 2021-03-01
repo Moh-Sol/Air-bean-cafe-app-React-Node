@@ -8,6 +8,7 @@ import bag from '../../assets/graphics/bag.svg'
 import navIcon from '../../assets/graphics/navicon.svg'
 import addBeverage from '../../actions/addBeverage'
 import { useDispatch, useSelector } from 'react-redux'
+import { motion } from 'framer-motion'
 
 function Menu() {
     const beveragesState = useSelector(state => {
@@ -30,50 +31,59 @@ function Menu() {
 
 
     return (
-    <div className={Styles.wrap}>
-        <header className="header-container">
-            <nav className={Styles.MenuNav}>
-                {toggleCart ? <div className={Styles.hiddenBox}></div> : ''}
-                <HamburgerMenu />
-                <div className={Styles.imgDiv} onClick={() => setToggleCart(!toggleCart)}>
-                    <span className={Styles.totalDrinks}> {beveragesState.length}</span>
-                    <img className={Styles.imgBag} src={bag}></img>
-                    {toggleCart ? <span className={Styles.dropdownArrow}></span> : ""}
-                </div>
-            </nav>
-        </header>
-        <div className={Styles.menuContainer}>
-        {toggleCart ? <Cart /> : ""}
+        <div className={Styles.wrap}>
+            <header className="header-container">
+                <nav className={Styles.MenuNav}>
+                    {toggleCart ? <motion.div className={Styles.hiddenBox}
+                        initial={{ x: '+100vw',  }}
+                        animate={{ x: 0, }}
 
-            <h1 data-testid='menuTitle' className={Styles.menuh1}>Meny</h1>
-            <ul data-testid='ulValue'className={Styles.dataLista}>
-                {menuData.map((item) => {
-                    return (
-                        <li className={Styles.listItem} key={item.id}>
-                            <div>
-                                <img className={Styles.imgPlus} onClick={() => {
-                                    dispatch(addBeverage(item))
-                                }} src={add}></img>
-                            </div>
-                            <div className={Styles.menucafe}>
+                    ></motion.div> : ''}
+                    <HamburgerMenu />
+                    <div className={Styles.imgDiv} onClick={() => setToggleCart(!toggleCart)}>
+                        <span className={Styles.totalDrinks}> {beveragesState.length}</span>
+                        <img className={Styles.imgBag} src={bag}></img>
+                        {toggleCart ? <motion.span className={Styles.dropdownArrow}
+                            initial={{ x: '+100vw', rotateZ: 45 }}
+                            animate={{ x: 0, rotateZ: 45, y: 5 }}
 
-                                <div className={Styles.cafe}>
-                                    <span >{item.title}</span>
-                                    <span className={Styles.dodded}></span>
+                        ></motion.span> : ""}
+                    </div>
+                </nav>
+            </header>
+            <div className={Styles.menuContainer}>
+                {toggleCart ? <Cart /> : ""}
 
-                                    <span >{item.price} Kr</span>
+                <h1 data-testid='menuTitle' className={Styles.menuh1}>Meny</h1>
+                <ul data-testid='ulValue' className={Styles.dataLista}>
+                    {menuData.map((item) => {
+                        return (
+                            <li className={Styles.listItem} key={item.id}>
+                                <div>
+                                    <img className={Styles.imgPlus} onClick={() => {
+                                        dispatch(addBeverage(item))
+                                    }} src={add}></img>
                                 </div>
+                                <div className={Styles.menucafe}>
 
-                                <h6>{item.desc}</h6>
+                                    <div className={Styles.cafe}>
+                                        <span >{item.title}</span>
+                                        <span className={Styles.dodded}></span>
 
-                            </div>
-                        </li>
-                    )
-                })}
-            </ul>
+                                        <span >{item.price} Kr</span>
+                                    </div>
+
+                                    <h6>{item.desc}</h6>
+
+                                </div>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
         </div>
-    </div>
- )}
+    )
+}
 
 export default Menu;
 

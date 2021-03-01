@@ -106,6 +106,7 @@
     margin: 0 auto;
     text-decoration: none;
     margin-bottom: 20px;
+    outline: none;
 }
 .btn2{
     width: 73%;
@@ -120,4 +121,6 @@
     margin: 0 auto;
     text-decoration: none;
     margin-bottom: 20px;
+    outline: none;
+
 }
