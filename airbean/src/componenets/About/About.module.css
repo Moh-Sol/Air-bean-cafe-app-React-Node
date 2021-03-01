@@ -7,7 +7,6 @@
     width: 100%;
     padding: 2rem;
     position: relative;
-    z-index: -1;
 }
     .main::before {
         position: absolute;
@@ -38,6 +37,7 @@
     max-width: 900px;
     text-align: left;
     z-index: 1000;
+    margin-top: 8rem;
 }
 .h1 {
     font-family: 'PT Serif', serif;

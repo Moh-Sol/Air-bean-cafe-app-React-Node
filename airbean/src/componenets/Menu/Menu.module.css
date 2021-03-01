@@ -38,185 +38,186 @@
 }
 
 .hiddenBox {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.603);
-  position: absolute;
-  z-index: 9000;
-  top: 1rem;
-  left: 1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.603);
+    position: absolute;
+    z-index: 9000;
+    top: 1rem;
+    left: 1rem;
 }
 
 .menuh1 {
   padding: 50px;
   font-family: "PT Serif", serif;
   font-size: 2.625rem;
-  color: #2f2926;
+  color: #2F2926;
 }
 
 .menuh1 {
-  padding: 50px;
-  font-family: "PT Serif", serif;
+    padding: 50px;
+    font-family: "PT Serif", serif;
 }
 
 .dataLista {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  align-items: center;
-  margin: 0 auto;
-  position: relative;
-  z-index: 10;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
 }
 
 .dropdownArrow {
-  height: 1.35rem;
-  width: 1.35rem;
-  -ms-transform: rotate(45deg); /* IE 9 */
-  transform: rotate(45deg); /* Standard */
-  background: #fff;
-  position: absolute;
-  bottom: -1rem;
+    height: 1.35rem;
+    width: 1.35rem;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    transform: rotate(45deg); /* Standard */
+    background: #fff;
+    position: absolute;
+    bottom: -1rem;
 }
 
 .listItem {
-  display: flex;
-  justify-content: center;
-  margin: 10px auto;
-  width: 311px;
-  height: 64px;
-  /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    width: 311px;
+    height: 64px;
+    /* background-color: blueviolet; */
 }
 
 .listItem div:first-of-type {
-  display: flex;
-  /* background-color: rgb(77, 34, 196); */
-  justify-content: center;
-  align-items: center;
-  margin-right: 15px;
+    display: flex;
+    /* background-color: rgb(77, 34, 196); */
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
 }
 
 .listItem div:last-of-type {
-  display: flex;
-  /* background-color: rgb(220, 166, 16); */
+    display: flex;
+    /* background-color: rgb(220, 166, 16); */
 }
 .imgDiv {
-  background-color: #2f2926;
-  height: 3.75rem;
-  width: 3.75rem;
-  padding: 10px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  cursor: pointer;
-  /* background-color: aquamarine; */
+    background-color: #2F2926;
+    height: 3.75rem;
+    width: 3.75rem;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    /* background-color: aquamarine; */
 }
 
 .imgPlus {
-  height: 30px;
-  background-color: black;
-  border-radius: 50%;
-  padding: 4px;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  margin-top: -8px;
-  cursor: pointer;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: -8px;
+    cursor: pointer;
 }
 
 .headerContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
 .imgBag {
-  text-align: center;
+    text-align: center;
 }
 
 .totalDrinks {
-  position: absolute;
-  top: -0.1rem;
-  right: -0.1rem;
-  background-color: #e5674e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1.375rem;
-  height: 1.375rem;
-  border-radius: 50%;
-  text-align: center;
-  color: #fff;
-  font-size: 0.875rem;
+    position: absolute;
+    top: -0.1rem;
+    right: -0.1rem;
+    background-color: #E5674E;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 1.375rem;
+    height: 1.375rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: .875rem;
 }
 .navIcon {
-  height: 15px;
-  /* background-color: #fff; */
+    height: 15px;
+    /* background-color: #fff; */
 }
 
 .menucafe {
-  /* width: 80%;s */
-  display: flex;
-  flex-direction: column;
-  /* background-color: cadetblue; */
+    /* width: 80%;s */
+    display: flex;
+    flex-direction: column;
+    /* background-color: cadetblue; */
 }
 
 .menucafe h6 {
-  width: 194.44px;
-  height: 24px;
-  font-family: "PT Serif", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 130%;
-  color: #2f2926;
-  text-align: start;
-  padding-left: 8px;
-  margin-top: -13px;
+    width: 194.44px;
+    height: 24px;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 130%;
+    color: #2F2926;
+    text-align: start;
+    padding-left: 8px;
+    margin-top: -13px;
 }
 
 .cafe {
-  width: 100%;
-  /* background-color: rgb(159, 169, 196); */
+    width: 100%;
+    /* background-color: rgb(159, 169, 196); */
 }
 
+
 .cafe span:first-of-type {
-  /* display: block; */
-  width: 194.44px;
-  height: 46px;
-  /* background-color: aqua; */
-  text-align: start;
-  font-family: "PT Serif", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 23px;
-  line-height: 120%;
-  color: #2f2926;
+    /* display: block; */
+    width: 194.44px;
+    height: 46px;
+    /* background-color: aqua; */
+    text-align: start;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 120%;
+    color: #2F2926;
 }
 
 .cafe span:last-of-type {
-  width: 76.75px;
-  height: 46px;
-  font-family: "PT Serif", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 23px;
-  line-height: 120%;
-  color: #2f2926;
-  /* background-color: burlywood; */
+    width: 76.75px;
+    height: 46px;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 120%;
+    color: #2F2926;
+    /* background-color: burlywood; */
 }
 
 .dodded {
-  display: inline;
-  position: absolute;
-  right: 140px;
-  /* padding-top: 23px; */
-  width: 100px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
-  /* border: 1px ; */
+    display: inline;
+    position: absolute;
+    right: 140px;
+    /* padding-top: 23px; */
+    width: 100px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+    /* border: 1px ; */
 }

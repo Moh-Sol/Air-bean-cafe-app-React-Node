@@ -18,17 +18,25 @@ function reducer(state = initialState, action) {
       return {
         ...state,
         beverages: [...state.beverages, action.payload]
-      }
+      };
     case "REMOVE_BEVERAGE": // Tar bort drink 
-      let index = state.beverages.indexOf(action.payload);
-      let newBeverages = state.beverages;
-      if (index > -1) {
-        newBeverages = state.beverages.splice(index, 1);
+
+      let newBeverages = [...state.beverages];
+      let removeDrink = true;
+
+      for (let i = 0; i < newBeverages.length; i++){
+        if(newBeverages[i].id === action.payload.id){
+          if (removeDrink){
+            newBeverages.splice(i, 1);
+            removeDrink = false;
+          }
+        }
       }
+
       return {
         ...state,
         beverages: newBeverages
-      }
+      };
     default:
       return state;
   }
