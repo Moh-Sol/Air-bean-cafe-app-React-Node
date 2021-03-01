@@ -9,6 +9,8 @@
     width: 23.4375rem;
     height: 41.6875rem;
     display: flex;
+    margin: 0 auto;
+    position: relative;
 }
 
 .landingLogo{
@@ -20,3 +22,4 @@
 .landingRight{
     margin-left: 3.9rem;
 }
+
