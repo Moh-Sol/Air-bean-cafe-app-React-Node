@@ -54,9 +54,6 @@ function Cart() {
        
     }
 
-
-
-
     return (
         <motion.main className={style.cartContainer}
         initial={{x:'+100vw'}}
