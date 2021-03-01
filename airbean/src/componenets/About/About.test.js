@@ -2,6 +2,8 @@
 
 
 import { render, getByTestId, fireEvent } from '@testing-library/react';
+import {createStore} from 'redux';
+import {createStore} from 'react-redux';
 import About from './About'
 
 it('h1 visar Vårt kaffe ', () => {

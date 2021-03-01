@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import addBeverage from '../../actions/addBeverage';
 import removeBeverage from '../../actions/removeBeverage';
 import arrowUp from '../../assets/graphics/arrow-up.svg';
@@ -11,6 +11,7 @@ import { motion } from 'framer-motion'
 function Cart() {
     const [menu, setMenu] = useState([])
     const chosenBeverages = useSelector(state => state.beverages);
+    const history = useHistory();
 
     const dispatch = useDispatch();
 
@@ -47,14 +48,21 @@ function Cart() {
         totalPrice = totalPrice + beveragesToDisplay[i].amountOfOrder * beveragesToDisplay[i].price;
     }
 
+    function takeMyMoney() {
+
+        if (beveragesToDisplay.length > 0) {
+            history.push('/status');
+        } else {
+            alert('Du har inte valt några drycker.');
+        }
+    }
+
     function handleClickSave() {
 
         localStorage.setItem('chosenBeverages',JSON.stringify(chosenBeverages) );
         alert(' Your shopping cart is saved')
        
     }
-
-
 
 
     return (
@@ -93,8 +101,8 @@ function Cart() {
                         <h3> {totalPrice} Kr</h3>
                     </div>
                     <p>inkl moms + drönarleverans</p>
-                    <Link to="/status" className={style.btn}>Take my money!</Link>
-                    <button className={style.btn} onClick={handleClickSave}> Save your shopping cart </button>
+                    <button className={style.btn} onClick={ takeMyMoney }>Take my money!</button>
+                    <button className={style.btn2} onClick={handleClickSave}> Save your shopping cart </button>
                 </footer>
             </section>
         </motion.main>
