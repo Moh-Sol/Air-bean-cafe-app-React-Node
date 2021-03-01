@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    position: relative;
 }
 
 .menuContainer {
@@ -62,8 +63,6 @@
     background-color: rgba(0, 0, 0, 0.603);
     position: absolute;
     z-index: 9000;
-    top: 1rem;
-    left: 1rem;
 }
 
 .menuh1 {
