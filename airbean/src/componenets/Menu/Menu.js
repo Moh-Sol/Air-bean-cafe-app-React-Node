@@ -47,7 +47,7 @@ function Menu() {
                             initial={{ x: '+100vw', rotateZ: 45 }}
                             animate={{ x: 0, rotateZ: 45, y: 5 }}
 
-                        ></motion.span> : ""}
+                        ></motion.span> : null}
                     </div>
                 </nav>
             </header>
