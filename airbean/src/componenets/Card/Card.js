@@ -53,7 +53,7 @@ function Cart() {
         if (beveragesToDisplay.length > 0) {
             history.push('/status');
         } else {
-            alert('Du har inte beställt några drinkar.');
+            alert('Du har inte valt några drycker.');
         }
     }
 
