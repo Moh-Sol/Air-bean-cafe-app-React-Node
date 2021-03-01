@@ -107,3 +107,17 @@
     text-decoration: none;
     margin-bottom: 20px;
 }
+.btn2{
+    width: 73%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #fff;
+    color: #2F2926 ;
+    border-radius: 3.125rem;
+    border: 3px solid #2F2926;
+    font-family: 'PT Serif', serif;
+    margin: 0 auto;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
