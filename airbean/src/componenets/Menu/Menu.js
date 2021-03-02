@@ -57,8 +57,8 @@ function Menu() {
             <div className={Styles.menuContainer}>
                 {toggleCart ? <Cart /> : ""}
 
-                <h1 data-testid='menuTitle' className={Styles.menuh1}>Meny</h1>
-                <ul data-testid='ulValue' className={Styles.dataLista}>
+                <h1  className={Styles.menuh1}>Meny</h1>
+                <ul  className={Styles.dataLista}>
                     {menuData.map((item) => {
                         return (
                             <li className={Styles.listItem} key={item.id}>

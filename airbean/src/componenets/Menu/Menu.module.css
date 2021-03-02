@@ -11,6 +11,10 @@
     justify-content: center;
 }
 
+
+
+
+
 .MenuNav {
     margin: 0 auto;
     width: 375px;
@@ -104,12 +108,10 @@
     margin: 10px auto;
     width: 311px;
     height: 64px;
-    /* background-color: blueviolet; */
 }
 
 .listItem div:first-of-type {
     display: flex;
-    /* background-color: rgb(77, 34, 196); */
     justify-content: center;
     align-items: center;
     margin-right: 15px;
@@ -117,7 +119,6 @@
 
 .listItem div:last-of-type {
     display: flex;
-    /* background-color: rgb(220, 166, 16); */
 }
 
 .imgDiv {
@@ -131,7 +132,6 @@
     justify-content: center;
     position: relative;
     cursor: pointer;
-    /* background-color: aquamarine; */
 }
 
 .imgPlus {
@@ -176,14 +176,11 @@
 
 .navIcon {
     height: 15px;
-    /* background-color: #fff; */
 }
 
 .menucafe {
-    /* width: 80%;s */
     display: flex;
     flex-direction: column;
-    /* background-color: cadetblue; */
 }
 
 .menucafe h6 {
@@ -202,14 +199,11 @@
 
 .cafe {
     width: 100%;
-    /* background-color: rgb(159, 169, 196); */
 }
 
 .cafe span:first-of-type {
-    /* display: block; */
     width: 194.44px;
     height: 46px;
-    /* background-color: aqua; */
     text-align: start;
     font-family: "PT Serif", serif;
     font-style: normal;
@@ -228,15 +222,12 @@
     font-size: 23px;
     line-height: 120%;
     color: #2F2926;
-    /* background-color: burlywood; */
 }
 
 .dodded {
     display: inline;
     position: absolute;
     right: 140px;
-    /* padding-top: 23px; */
     width: 100px;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
-    /* border: 1px ; */
 }

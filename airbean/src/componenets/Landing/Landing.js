@@ -13,7 +13,6 @@ export default function Landing() {
 
     const history = useHistory();
 
-    console.log(history)
 
     return (
         <motion.div data-testid="historyPushBtn"
@@ -37,51 +36,3 @@ export default function Landing() {
     );
 }
 
-
-
-
-// export default function Landing() {
-
-//     const history = useHistory();
-
-//     console.log(history)
-
-//     return (
-//         <motion.div data-testid="historyPushBtn"
-//             // onClick={() => history.push('/menu')}
-//             className={landingStyles.landingBody}
-           
-
-
-//         >
-
-
-
-//             <img data-testid='img-logo'
-//                 alt=""
-//                 className={landingStyles.landingLogo}
-//                 src={logo}></img>
-
-//             <motion.img data-testid='img-landingLeft'
-//                 alt=""
-//                 src={landingLeft}
-                
-
-//                 initial={{ rotateZ: 0 ,y:0}}
-//                 whileTap={{rotateZ: 360 ,y:0}}
-//                 transition={{duration:5}}
-                
-//                 ></motion.img>
-
-//             <motion.img data-testid='img-landingRight'
-//                 alt=""
-//                 className={landingStyles.landingRight}
-//                 src={landingRight}
-                
-//              }
-                
-                
-//                 ></motion.img>
-//         </motion.div>
-//     );
-// }
