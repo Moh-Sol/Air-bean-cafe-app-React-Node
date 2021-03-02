@@ -1,15 +1,9 @@
-
-
 import { render  } from '@testing-library/react';
 import React from 'react';
 import About from './About'
 
 
-  
-
-// Klart med test About.js , HamburgerMenu testas inte här utan för sig själv. funkar testingen för den komponenten så ska den fungera här i About.js också.
-
-     test ('right text kaffe' , () => {
+ test ('right text kaffe' , () => {
       const rendered = render(<About />)
       expect(rendered.getByText('Vårt kaffe'));
       
