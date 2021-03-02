@@ -69,6 +69,7 @@ function Cart() {
         <motion.main className={style.cartContainer}
         initial={{x:'+100vw'}}
         animate={{x:0}}
+        transition={{type:'tween'}}
         >
             <section className={style.cartContents}>
                 <h1 className={style.h1}>Din beställning</h1>

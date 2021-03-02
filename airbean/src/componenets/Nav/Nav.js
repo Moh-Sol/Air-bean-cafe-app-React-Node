@@ -12,6 +12,8 @@ export default function Nav() {
         <motion.div className={navStyles.navBody}
         initial={{x:'-100vw'}}
         animate={{x:0}}
+        transition={{type:'tween'}}
+
         >
 
             <div
