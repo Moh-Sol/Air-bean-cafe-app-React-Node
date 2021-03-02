@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Nav from '../Nav/Nav'
 import Styles from './Menu.module.css'
 import HamburgerMenu from '../Hamburger-menu/HamburgerMenu'
 import Cart from '../Card/Card'
 import add from '../../assets/graphics/add.svg'
 import bag from '../../assets/graphics/bag.svg'
-import navIcon from '../../assets/graphics/navicon.svg'
 import addBeverage from '../../actions/addBeverage'
 import { useDispatch, useSelector } from 'react-redux'
 import { motion } from 'framer-motion'
