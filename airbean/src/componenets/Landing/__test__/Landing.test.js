@@ -1,9 +1,9 @@
 import React from 'react';
-import { shallow } from 'enzyme'
+// import { shallow } from 'enzyme'
 import Landing from '../Landing'
 import { render, getByTestId, fireEvent } from '@testing-library/react';
-import { createMemoryHistory } from 'history'
-import { Router } from 'react-router-dom'
+// import { createMemoryHistory } from 'history'
+// import { Router } from 'react-router-dom'
 
 
 
