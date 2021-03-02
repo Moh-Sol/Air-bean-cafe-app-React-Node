@@ -1,9 +1,7 @@
 .link {
     height: fit-content;
     width: fit-content;
-    /* position: absolute;
-    top: 1rem;
-    left: 1rem; */
+
     cursor: pointer;
 }
 .hamburger {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link, useHistory } from 'react-router-dom';
+import {  useHistory } from 'react-router-dom';
 import addBeverage from '../../actions/addBeverage';
 import removeBeverage from '../../actions/removeBeverage';
 import arrowUp from '../../assets/graphics/arrow-up.svg';

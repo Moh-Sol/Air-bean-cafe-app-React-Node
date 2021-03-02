@@ -18,8 +18,9 @@ function App() {
 
   useEffect(() => {
     let showDataIStorage = localStorage.getItem('chosenBeverages');
-    console.log('data i local storge ', JSON.parse(showDataIStorage))
     let dataFromStorage = JSON.parse(showDataIStorage)
+    console.log('data i local storge ', dataFromStorage)
+
     if (dataFromStorage) dataFromStorage.forEach(item => dispatch(addBeverage(item)))
   }, [])
 

@@ -12,7 +12,7 @@ const initialState = {
   beverages: []
 }
 
-export function reducer(state = initialState, action) {
+ function reducer(state = initialState, action) {
   switch (action.type) {
     case "ADD_BEVERAGE": // Lägger till drinken i arrayn.
       return {

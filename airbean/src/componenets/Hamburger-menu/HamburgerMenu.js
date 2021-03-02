@@ -1,5 +1,4 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
 import style from './Hamburger-menu.module.css'
 import { useHistory } from 'react-router-dom';
 

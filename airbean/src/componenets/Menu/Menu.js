@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Nav from '../Nav/Nav'
 import Styles from './Menu.module.css'
 import HamburgerMenu from '../Hamburger-menu/HamburgerMenu'
 import Cart from '../Card/Card'
 import add from '../../assets/graphics/add.svg'
 import bag from '../../assets/graphics/bag.svg'
-import navIcon from '../../assets/graphics/navicon.svg'
 import addBeverage from '../../actions/addBeverage'
 import { useDispatch, useSelector } from 'react-redux'
 import { motion } from 'framer-motion'
@@ -57,8 +55,8 @@ function Menu() {
             <div className={Styles.menuContainer}>
                 {toggleCart ? <Cart /> : ""}
 
-                <h1 data-testid='menuTitle' className={Styles.menuh1}>Meny</h1>
-                <ul data-testid='ulValue' className={Styles.dataLista}>
+                <h1  className={Styles.menuh1}>Meny</h1>
+                <ul  className={Styles.dataLista}>
                     {menuData.map((item) => {
                         return (
                             <li className={Styles.listItem} key={item.id}>
