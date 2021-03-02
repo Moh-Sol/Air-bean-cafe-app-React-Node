@@ -35,8 +35,9 @@ function Menu() {
             <header className="header-container">
                 <nav className={Styles.MenuNav}>
                     {toggleCart ? <motion.div className={Styles.hiddenBox}
-                        initial={{ x: '+100vw',  }}
+                        initial={{ x: '+100vw', }}
                         animate={{ x: 0, }}
+                        transition={{ type: 'tween' }}
 
                     ></motion.div> : ''}
                     <HamburgerMenu />
@@ -46,7 +47,8 @@ function Menu() {
                         {toggleCart ? <motion.span className={Styles.dropdownArrow}
                             initial={{ x: '+100vw', rotateZ: 45 }}
                             animate={{ x: 0, rotateZ: 45, y: 5 }}
-
+                            transition={{ type: 'tween' }}
+                      
                         ></motion.span> : ""}
                     </div>
                 </nav>
